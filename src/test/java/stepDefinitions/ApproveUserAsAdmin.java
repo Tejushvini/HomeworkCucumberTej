@@ -31,8 +31,9 @@ public class ApproveUserAsAdmin {
     }
     @Then("I log in as {string}")
     public void i_log_in_as(String string) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+
+            loginPage.enterUsername(username);
+
     }
     @Then("I navigate to the {string} dashboard")
     public void i_navigate_to_the_dashboard(String string) {
